@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: pink ;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+
+.logo {
+   width: 40px;
+   height: 40px;
+   background: peru;
+   border-radius: 5px;   
+}
+
+.nav {
+   display: flex;
+   gap: 15px;
+   background-color: pink;  
+}
+
+.nav-item {
+    width: 40px;
+    height: 20px;
+    background: peru;
+    border-radius: 5px;
+}
+
+body {
+    background: whitesmoke;
+    padding: 40px;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    border: 3px solid coral;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.item {
+    height: 40px;
+    border-radius: 5px;
+    background-color: peru;
+}
+
+.itemMaior{
+    flex: 2 0 40px;
+    background-color: peru;
+}
+
+.grande {
+    min-width: 100px;
+}
+
+
+
