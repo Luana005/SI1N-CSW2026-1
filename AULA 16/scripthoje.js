@@ -4,7 +4,7 @@ document.getElementById('titulo').innerHTML = "Olá mundo Javascript "
 window.prompt("Olá aluno de Javascript, qual o seu nome?")
 
 
-document.getElementById('nomeAluno').innerHTML = ("O nome do aluno javascript é : + nomePrompt")
+document.getElementById('nomeAluno').innerHTML = ("O nome do aluno javascript é :" + nomePrompt)
 
 
 let resposta = window.confirm("Você gosta de Javascript?")
@@ -19,7 +19,14 @@ else{
 function exibeNomeAluno() {
     let inputAluno = document.getElementById('inputNomeAluno').value;
 
-    document.getElementById("resposta").innerHTML = "O nome do aluno digitado foi:" + inputAluno;
+    document.getElementById("resposta").style.backgroundImage = "linear-gradient(red 40%, yellow 30%, blue 65%);" //"linear-gradient(to right, red, yellow)";
 
-    document.getElementById("resposta").style.backgroundImage = "linear-gradient (to right, red, yellow)";
+    document.getElementById("resposta").innerHTML = "O nome do aluno digitado foi:" + inputAluno;
+}
+
+function Limpar(){
+    document.getElementById("inputNomeAluno").value = "";
+    document.getElementById("resposta").innerHTML = "";
+    document.getElementById("resposta").style.backgroundImage = null
+
 }
